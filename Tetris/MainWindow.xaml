@@ -1,0 +1,70 @@
+﻿<Window x:Class="Tetris.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tetris"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="676" KeyDown="KeyPressed">
+    <Grid x:Name="MainGrid" Margin="213,123,213,111"  Height="500" Width="250" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"  />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+            <RowDefinition Height="1*"  />
+        </Grid.RowDefinitions>
+        <Button x:Name="StartGame" Content="StartGame" HorizontalAlignment="Left" Margin="-179,-7,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="90" Height="32" Click="StartGame_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE9F5F6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF0C0C0C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="Pause" Content="Pause" HorizontalAlignment="Left" Margin="-179,6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" Grid.RowSpan="2" Height="30" Click="Pause_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFF7F5F5" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+</Window>
